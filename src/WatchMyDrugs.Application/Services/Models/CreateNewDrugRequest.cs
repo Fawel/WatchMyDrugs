@@ -15,12 +15,12 @@ namespace WatchMyDrugs.Application.Services.Models
         {
             if (string.IsNullOrWhiteSpace(drugType))
             {
-                throw new ArgumentException($"'{nameof(drugType)}' cannot be null or whitespace", nameof(drugType));
+                throw new ArgumentException($"'{nameof(drugType)}' должно иметь значение", nameof(drugType));
             }
 
             if (string.IsNullOrWhiteSpace(extId))
             {
-                throw new ArgumentException($"'{nameof(extId)}' cannot be null or whitespace", nameof(extId));
+                throw new ArgumentException($"'{nameof(extId)}' должно иметь значение", nameof(extId));
             }
 
             DrugType = drugType;
